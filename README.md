@@ -1,5 +1,7 @@
 
-Projeto integrado ao firebase.
+PWA e Projeto integrado ao firebase.
+
+Pasta DIST é a build do projeto criado a partir do angular com comando ng build --prod, é pasta com arquivos que deve ser executada no servidor.
 
 
 #Node
