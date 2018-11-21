@@ -1,12 +1,27 @@
 {
-  "name": "pwa-top",
-  "short_name": "pwa-top",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
-  "display": "standalone",
+  "name": "TOP BUY",
+  "short_name": "TOP BUY",
+  "theme_color": "#3e6f83",
+  "background_color": "#e21558",
+  "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
   "icons": [
+    {
+      "src": "assets/icons/icon-36x36.png",
+      "sizes": "36x36",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-57x57.png",
+      "sizes": "57x57",
+      "type": "image/png"
+    },
     {
       "src": "assets/icons/icon-72x72.png",
       "sizes": "72x72",
