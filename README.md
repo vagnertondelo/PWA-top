@@ -1,3 +1,14 @@
+
+PWA e Projeto integrado ao firebase.
+
+Pasta DIST é a build do projeto criado a partir do angular com comando ng build --prod, é pasta com arquivos que deve ser executada no servidor.
+
+
+#Node
+
+Node deve estar instalado na maquina versão 8 ou superior, apague o diretorio node_modules do projeto, pelo terminal navegue até onde o projeto esta e execute o comando npm install, isso ira criar a o diretorio node_modules novamente com todas as dependencias e evitará erros.
+
+
 # PwaTop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
