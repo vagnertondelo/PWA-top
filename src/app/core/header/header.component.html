@@ -1,0 +1,50 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+              mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+        </div>
+      </div>
+      <span class="mdl-layout-title"></span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation largura-navgation">
+        <a href="" class="mdl-navigation__link">
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">shopping_cart</div>
+        </a>
+        <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons md-32">account_circle </i>
+        </button>
+
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+          <a class="mdl-menu__item" href="index.html">Sair</a>
+          <li class="mdl-menu__item">Configurações</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title"><img src="assets/img/rodape_logo_on.png" style="width: 85%"></span>
+    <nav class="mdl-navigation">
+      <a id="sample1" class="mdl-navigation__link" data-action="newItem">Bebidas</a>
+      <div for="sample1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+        <a href="itens.html" class="mdl-navigation__link" data-val="DEU">Cerveja</a>
+        <a class="mdl-navigation__link" data-val="BLR">Refrigerantes</a>
+        <a class="mdl-navigation__link" data-val="RUS">Sucos</a>
+      </div>
+
+      <a class="mdl-navigation__link" data-action="checkAll">Doces</a>
+      <a class="mdl-navigation__link" data-action="uncheckAll">Massas</a>
+
+
+
+
+      <a class="mdl-navigation__link" data-action="clearAll">Amaciantes</a>
+    </nav>
+
+  </div>

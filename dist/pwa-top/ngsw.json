@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.723fe207750839ac1ba1.js",
+        "/polyfills.c6871e56cb80756a5498.js",
+        "/runtime.ec2944dd8b20ec099bf3.js",
+        "/scripts.1f2859dcedbf305673c8.js",
+        "/styles.d55f2fd53f510831d838.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-36x36.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-48x48.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-57x57.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/img/rodape_logo_on.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "ebc26808f13a69b72f90bd247b22df18a9b694a1",
+    "/assets/icons/icon-144x144.png": "6b2a06c829be7f6302a4f3073fdf2e6c4df0f7ca",
+    "/assets/icons/icon-152x152.png": "df62e60cd321eaa984dacc299ef29df4227652f7",
+    "/assets/icons/icon-192x192.png": "00b5a18a16a8224dd4bbc9562183474a6ee34b25",
+    "/assets/icons/icon-36x36.png": "27220beeb06335e7a927c27bbe4132e783d60dd2",
+    "/assets/icons/icon-384x384.png": "a262227ad108dac0f6d7a8379ab79d75c61ca613",
+    "/assets/icons/icon-48x48.png": "6a73ec63fbbe9511770e933d69a4d597d9e7789b",
+    "/assets/icons/icon-512x512.png": "f23fb069b89d9b2243783f968399648d82e03de3",
+    "/assets/icons/icon-57x57.png": "ef2dc0562e88f04d40152ee770b0d690a5137619",
+    "/assets/icons/icon-72x72.png": "7029f10a50f06952ed4eaba1d33017b66c0f24b9",
+    "/assets/icons/icon-96x96.png": "91df587dd88af5264c68de15f21da02324331cff",
+    "/assets/img/rodape_logo_on.png": "e8454b2ea99f8b13a1a745ac91457380dea55cfe",
+    "/favicon.ico": "7029f10a50f06952ed4eaba1d33017b66c0f24b9",
+    "/index.html": "1e16d3b67fe7c772b26251f46df1352ed7ab19d7",
+    "/main.723fe207750839ac1ba1.js": "f028b27e81845c3f356433989e7de0a4c085a7c7",
+    "/polyfills.c6871e56cb80756a5498.js": "ce68d153e9b9b6d26b625069c0ee99ae09c6f255",
+    "/runtime.ec2944dd8b20ec099bf3.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/scripts.1f2859dcedbf305673c8.js": "bbaf00e14670f6cca8bf47363f76fa5396b5f839",
+    "/styles.d55f2fd53f510831d838.css": "847eeaa31128ec1a32773847f7fb9ffba8e98281"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
