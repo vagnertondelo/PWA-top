@@ -22,6 +22,7 @@
 
         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
           <a class="mdl-menu__item" [routerLink]="['login']">Login</a>
+          <a class="mdl-menu__item" [routerLink]="['']">Voltar a Inicial</a>
           <li class="mdl-menu__item">Configurações</li>
         </ul>
       </nav>
@@ -33,7 +34,7 @@
     <nav class="mdl-navigation">
       <a id="sample1" class="mdl-navigation__link" data-action="newItem">Bebidas</a>
       <div for="sample1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-        <a href="itens.html" class="mdl-navigation__link" data-val="DEU">Cerveja</a>
+        <a [routerLink]="['itens']"   class="mdl-navigation__link" data-val="DEU">Cerveja</a>
         <a class="mdl-navigation__link" data-val="BLR">Refrigerantes</a>
         <a class="mdl-navigation__link" data-val="RUS">Sucos</a>
       </div>

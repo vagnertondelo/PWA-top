@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-inicial',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicialComponent implements OnInit {
 
+  @Input() description='';
+
+  @Input() url= '';
+  
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    
+    console.log("achou inicial");
+  
   }
 
 }

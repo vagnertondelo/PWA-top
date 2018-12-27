@@ -1,0 +1,18 @@
+<div>
+  <div class="mdl-card__media">
+    <img [src]="url" [alt]="description">
+  </div>
+  <div class="mdl-card__supporting-text text-center">
+    {{description}}
+  </div>
+  <div class="mdl-card__actions mdl-card--border text-center">
+    <a [routerLink]="['itens']" class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+      Comprar
+    </a>
+  </div>
+  <!-- <div class="mdl-card__menu">
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                      <i class="material-icons">share</i>
+                  </button>
+              </div>-->
+</div>

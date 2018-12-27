@@ -1,21 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, enableProdMode } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { InicialComponent } from './inicial/inicial.component';
 
 import { CoreModule } from './core/core.module';
 
 import { LoginModule } from './login/login.module';
 import { ErrorsModule } from './errors/errors.module';
+import { PagesModule } from './pages/pages.module';
+import { HomeModule } from './home/home.module';
+
+
+
 //enableProdMode ();
 @NgModule({
   declarations: [
-    AppComponent,
-    InicialComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +26,8 @@ import { ErrorsModule } from './errors/errors.module';
     CoreModule,
     LoginModule,
     ErrorsModule,
+    PagesModule,
+    HomeModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

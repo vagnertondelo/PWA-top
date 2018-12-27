@@ -1,11 +1,7 @@
 
  
  
- .fundo-login  {
-    overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
-    }
+ 
      
     .fundo-login {
    // background-color: rgba(0, 0, 0, 0.0392156862745098);
@@ -14,6 +10,11 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+        margin: 0px;
+        padding: 0px;
       }
      
     #login-conatiner{

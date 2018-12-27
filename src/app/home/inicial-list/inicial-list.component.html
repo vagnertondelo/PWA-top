@@ -1,0 +1,15 @@
+<div class="mdl-layout__content" style="padding-top: 4.5rem;">
+  <main>
+    <div class="title-produtos">
+      <h2 class="md-32 ">Categorias</h2>
+    </div>
+    <div class="mdl-grid">
+      <app-inicial 
+      *ngFor="let photo of photos"
+       [url]="photo.url" 
+       [description]="photo.description"
+       class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-card mdl-shadow--2dp">
+      </app-inicial>
+    </div>
+  </main>
+</div>
