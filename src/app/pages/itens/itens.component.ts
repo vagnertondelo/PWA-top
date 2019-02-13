@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InicialService } from 'src/app/home/inicial/inicial.service';
 
 @Component({
   selector: 'app-itens',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItensComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private inicialService: InicialService) { }
+    photos: any = [];
+    filter: string = '';
+   
 
-  ngOnInit() {
+  ngOnInit(): void {
+    console.log("achou lista");
+    this.inicialService.listPhotos().subscribe(photos => {
+
+
+      console.log("imagem = " +  photos[0].imagem);
+      console.log("Valor definifo = " +  photos[0].valorDefnido.id);
+      this.photos = photos;
+    });
+
   }
 
 }

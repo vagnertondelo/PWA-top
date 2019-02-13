@@ -13,12 +13,17 @@ import { ErrorsModule } from './errors/errors.module';
 import { PagesModule } from './pages/pages.module';
 import { HomeModule } from './home/home.module';
 
+import { ProdutoComponent } from './produtos/produto/produto.component';
+import { ProdutoListaComponent } from './produtos/produto-lista/produto-lista.component';
+
 
 
 //enableProdMode ();
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProdutoComponent,
+    ProdutoListaComponent
   ],
   imports: [
     BrowserModule,

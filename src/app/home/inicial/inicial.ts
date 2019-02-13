@@ -1,3 +1,4 @@
+
 export interface Inicial {
 
     id: number;
@@ -5,8 +6,10 @@ export interface Inicial {
     url: string;
     description: string;
     allowComments: boolean;
-    likes:number;
-    comments:number;
-    userId:number;
+    likes: number;
+    comments: number;
+    userId: number;
 
+
+    
 }

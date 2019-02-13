@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Produto } from 'src/app/produtos/produto/produto';
-
+import {Produto} from './produto';
 
 const API = 'http://localhost:2000/Listar';
 
@@ -9,12 +8,12 @@ const API = 'http://localhost:2000/Listar';
   providedIn: 'root'
 })
 
-export class InicialService {
+export class ProdutoService {
 
   constructor(private http: HttpClient) { }
 
-   listPhotos(){
-    //return this.http.get<Inicial[]>(API);
-    return this.http.post(API,Array<Produto>());  
+   listProdutos(){
+    return this.http.get<Produto[]>(API);
+    //return this.http.post<Produto[]>(API,Array<Produto>());  
   }
 }

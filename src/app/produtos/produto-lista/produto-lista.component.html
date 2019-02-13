@@ -3,7 +3,7 @@
   <main>
     
     <div class="title-produtos">
-      <h2 class="md-32 ">Categorias</h2>
+      <h2 class="md-32 ">Lista de Produtos</h2>
     </div>
     
     <div class="mdl-grid">
@@ -13,8 +13,8 @@
       <!--<app-inicial  [url]="photos.imagem64" [description]="photos.valorDefnido.description" class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-card mdl-shadow--2dp">
       </app-inicial>-->
 
-      <app-inicial  *ngFor="let photo of photos"  [url]="photo" [description]="photo" class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-card mdl-shadow--2dp">
-      </app-inicial>
+      <app-produto  *ngFor="let produto of produtos"  [url]="" [nome]="produto.Nome" class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-card mdl-shadow--2dp">
+      </app-produto>
       
     </div>
   </main>
