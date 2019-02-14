@@ -8,6 +8,7 @@ import { ProdutoListaComponent } from './produtos/produto-lista/produto-lista.co
 import { ListComponent } from './pages/list/list.component';
 import { InicialListComponent } from './home/inicial-list/inicial-list.component';
 import { ListaItensComponent } from './pages/lista-itens/lista-itens.component';
+import { ProdutoDetalhesComponent } from './produtos/produto-detalhes/produto-detalhes.component';
 
 const routes: Routes = [
 
@@ -16,7 +17,11 @@ const routes: Routes = [
     component: ProdutoListaComponent
 
   },
+  {
+    path: 'detalhes/:id',
+    component: ProdutoDetalhesComponent
 
+  },
   {
     path: 'list',
     component: ListComponent
@@ -42,6 +47,7 @@ const routes: Routes = [
     component: NotFoundComponent
 
   },
+  
 ];
 
 @NgModule({

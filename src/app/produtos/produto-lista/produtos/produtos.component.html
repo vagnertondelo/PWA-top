@@ -1,0 +1,21 @@
+<div class="mdl-layout__content" style="padding-top: 4.5rem;width: 100%;">
+  <main>
+    <div class="title-produtos">
+      <h2 class="md-32 ">Lista de Produtos</h2>
+    </div>
+    <div class="mdl-grid">
+      <div *ngFor="let produto of produtos" 
+        class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-card mdl-shadow--2dp">
+       <app-produto  [url]="" [nome]="produto.Nome" [pesoBruto]='produto.PesoBruto'>
+       </app-produto>
+        <div class="mdl-card__actions mdl-card--border text-center">
+          <a [routerLink]="['/detalhes', produto.ID]"
+            class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+            Comprar
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>

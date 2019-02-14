@@ -1,18 +1,9 @@
-<div >
-  <div class="mdl-card__media">
-    <img [src]="url" [alt]="nome">
-  </div>
-  <div class="mdl-card__supporting-text text-center">
-    {{nome}}
-  </div>
-  <div class="mdl-card__actions mdl-card--border text-center">
-    <a [routerLink]="['bebidas']" class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--colored">
-      Comprar
-    </a>
-  </div>
-  <!-- <div class="mdl-card__menu">
-                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                      <i class="material-icons">share</i>
-                  </button>
-              </div>-->
-</div>
+
+     <div class="mdl-card__media">
+      <img [src]="url" [alt]="nome">
+    </div>
+    <div class="mdl-card__supporting-text text-center">
+      <p>{{nome}}</p>
+      <p>Peso : {{pesoBruto}}</p>
+    </div>
+  

@@ -13,6 +13,8 @@ export class ProdutoComponent implements OnInit {
 
   @Input() url= 'http://www.superirmao.com.br/imagem/97c706ba48303ce95df988ced972bb59.jpg';
 
+  @Input() pesoBruto ='';
+
   constructor() { }
 
   ngOnInit() {
