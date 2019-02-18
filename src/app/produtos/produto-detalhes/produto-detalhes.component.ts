@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
+;
+
 import { ProdutoService } from '../produto/produto.service';
 import { Produto } from '../produto/produto';
 
@@ -13,6 +16,7 @@ export class ProdutoDetalhesComponent implements OnInit {
 
   produto:Produto;
 
+  
   constructor(
    private route:ActivatedRoute,
    private produtoService: ProdutoService
@@ -21,15 +25,11 @@ export class ProdutoDetalhesComponent implements OnInit {
   ngOnInit():void {
     
     const id = this.route.snapshot.params.id;
-
-    this.produtoService.findById(id).subscribe(produto => {
-      
-      
-      //console.log("Nome do produto unico " +JSON.stringify( produto.content[0].Nome));
-      
+    
+    this.produtoService.findById(id).subscribe
+    (produto => {
       this.produto = produto.content[0];
     });
-
     console.log("ID do produto : "+id);
   
   }
