@@ -1,6 +1,9 @@
 
 export interface Produto {
+    
+    content: any;
 
+    
 
     ID: number,
     Empresa: number,

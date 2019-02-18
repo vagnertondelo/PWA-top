@@ -25,9 +25,9 @@ export class ProdutoDetalhesComponent implements OnInit {
     this.produtoService.findById(id).subscribe(produto => {
       
       
-      console.log("Nome do produto unico " +JSON.stringify( produto.Nome));
+      //console.log("Nome do produto unico " +JSON.stringify( produto.content[0].Nome));
       
-      this.produto = produto
+      this.produto = produto.content[0];
     });
 
     console.log("ID do produto : "+id);
