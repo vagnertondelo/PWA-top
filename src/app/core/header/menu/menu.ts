@@ -1,5 +1,5 @@
 
-export interface Produto {
+export interface Menu {
     
     content: any;
     valorDefnido: any;

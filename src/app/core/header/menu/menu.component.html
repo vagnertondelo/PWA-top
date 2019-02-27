@@ -1,0 +1,10 @@
+
+  <nav class="mdl-navigation">
+    <!--<a id="sample1" class="mdl-navigation__link" data-action="newItem">Bebidas</a>
+    <div for="sample1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+      <a [routerLink]="['itens']"   class="mdl-navigation__link" data-val="DEU">Cerveja</a>
+      <a class="mdl-navigation__link" data-val="BLR"></a>
+      <a class="mdl-navigation__link" data-val="RUS">Sucos</a>
+    </div>-->
+    <a [routerLink]="['/detalhes', id]" (click)="MenufindById(id)" class="mdl-navigation__link">{{nome}}</a>
+  </nav>

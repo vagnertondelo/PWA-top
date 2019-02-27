@@ -21,10 +21,12 @@ import { RouterModule } from '@angular/router';
 
 
 
+
 //enableProdMode ();
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -7,9 +7,9 @@
           <i class="material-icons">search</i>
         </label>
         <div class="mdl-textfield__expandable-holder">
-          <input  class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+          <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
         </div>
-        
+
       </div>
       <span class="mdl-layout-title"></span>
       <div class="mdl-layout-spacer"></div>
@@ -32,21 +32,7 @@
 
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title"><img src="assets/img/rodape_logo_on.png" style="width: 85%"></span>
-    <nav class="mdl-navigation">
-      <a id="sample1" class="mdl-navigation__link" data-action="newItem">Bebidas</a>
-      <div for="sample1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-        <a [routerLink]="['itens']"   class="mdl-navigation__link" data-val="DEU">Cerveja</a>
-        <a class="mdl-navigation__link" data-val="BLR">Refrigerantes</a>
-        <a class="mdl-navigation__link" data-val="RUS">Sucos</a>
-      </div>
-
-      <a class="mdl-navigation__link" data-action="checkAll">Doces</a>
-      <a class="mdl-navigation__link" data-action="uncheckAll">Massas</a>
-
-
-
-
-      <a class="mdl-navigation__link" data-action="clearAll">Amaciantes</a>
-    </nav>
-
+    <app-menu *ngFor="let produto of produtos" [nome]="produto.valorDefnido.Nome" [id]="produto.valorDefnido.ID">
+    </app-menu>
   </div>
+</div>

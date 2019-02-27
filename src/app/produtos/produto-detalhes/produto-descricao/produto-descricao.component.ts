@@ -21,6 +21,9 @@ export class ProdutoDescricaoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    
+
   }
 
 }

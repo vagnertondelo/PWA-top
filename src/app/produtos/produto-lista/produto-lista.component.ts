@@ -21,7 +21,7 @@ export class ProdutoListaComponent implements OnInit {
 
       // console.log("imagem = " +photos.imagem64);
       // console.log("ID = "+photos.valorDefnido.id);
-    console.log("lista de produtos = " + JSON.stringify(produtos[0].PesoBruto));
+    //console.log("lista de produtos = " + JSON.stringify(produtos[0].imagem));
       //console.log("Valor definifo = " +  photos[0].valorDefnido.id);
       //console.log("ID = "+photos.valorDefnido);
       //console.log("lista push  " +this.produtos.push(produtos[1]));
