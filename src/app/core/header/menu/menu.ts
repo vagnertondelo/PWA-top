@@ -4,6 +4,7 @@ export interface Menu {
     content: any;
     valorDefnido: any;
     imagem:any;
+    categoria:any;
 
     
 

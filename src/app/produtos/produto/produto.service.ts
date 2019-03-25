@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {Produto} from './produto';
 
-const API = 'http://localhost:3000/bebidas';
+const API = 'http://localhost:3000/listar';
 
 const APILer = 'http://localhost:3000/ler';
 
@@ -23,8 +23,8 @@ export class ProdutoService {
     return this.http.get<Produto>(APILer+'/'+id);
   }
 
-  listProdutosPaginate(){
-    return this.http.get<Produto[]>(API);
+  produtoCategoria(categoria: string){
+    return this.http.get<Produto>(API+'/'+categoria);
     //return this.http.post<Produto[]>(API,Array<Produto>());  
   }
   
